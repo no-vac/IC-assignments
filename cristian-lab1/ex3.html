@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HW1-3</title>
+  </head>
+  <body>
+    <form action="#">
+      <p>Please complete this form to submit your feedback:</p>
+      <p>
+        <label
+          >Name:
+          <select>
+            <option value="Mr.">Mr.</option>
+            <option value="Mrs.">Mrs.</option>
+            <option value="Ms.">Ms.</option>
+          </select>
+          <input type="text"
+        /></label>
+      </p>
+      <p>
+        <label
+          >Email Address: <input type="email" placeholder="you@cnn.com" />
+        </label>
+      </p>
+      <p>
+        <label> Phone Number: </label>
+        <input
+          type="text"
+          pattern="\d{3}\s\d{3}[-]\d{3}"
+          placeholder="123 456-7890"
+        />
+      </p>
+      <p>
+        <label>Response: This is... </label>
+        <input type="radio" name="response" value="excellent" /> Excellent
+        <input type="radio" name="response" value="okay" /> okay
+        <input type="radio" name="response" value="boringn" />boring
+      </p>
+      <p>
+        <label> Comments: </label>
+        <textarea name="comments" id="comments" cols="30" rows="3"></textarea>
+      </p>
+      <input type="submit" value="Send My Feedback" />
+    </form>
+  </body>
+</html>
