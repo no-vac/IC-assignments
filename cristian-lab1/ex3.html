@@ -10,26 +10,23 @@
     <form action="#">
       <p>Please complete this form to submit your feedback:</p>
       <p>
-        <label
-          >Name:
-          <select>
-            <option value="Mr.">Mr.</option>
-            <option value="Mrs.">Mrs.</option>
-            <option value="Ms.">Ms.</option>
-          </select>
-          <input type="text"
-        /></label>
+        <label>Name:</label>
+        <select>
+          <option value="Mr.">Mr.</option>
+          <option value="Mrs.">Mrs.</option>
+          <option value="Ms.">Ms.</option>
+        </select>
+        <input type="text" />
       </p>
       <p>
-        <label
-          >Email Address: <input type="email" placeholder="you@cnn.com" />
-        </label>
+        <label>Email Address: </label>
+        <input type="email" placeholder="you@cnn.com" />
       </p>
       <p>
         <label> Phone Number: </label>
         <input
           type="text"
-          pattern="\d{3}\s\d{3}[-]\d{3}"
+          pattern="\d{3}\s\d{3}[-]\d{4}"
           placeholder="123 456-7890"
         />
       </p>
