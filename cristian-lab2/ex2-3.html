@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Exercise 2-3</title>
+  </head>
+  <body>
+    <div class="container">
+      <form action="#">
+        <label for="LastName">Last Name: </label>
+        <input type="text" /><br />
+
+        <label for="FirstName">First Name: </label>
+        <input type="text" /><br />
+
+        <label for="Email">E-mail Address: </label>
+        <input type="password" /><br />
+
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Clear" />
+      </form>
+    </div>
+    <style>
+      label,
+      input {
+        display: inline-block;
+        width: 110px;
+        margin-bottom: 10px;
+      }
+      input:hover {
+        background-color: cyan;
+      }
+      input:focus {
+        background-color: yellow;
+      }
+    </style>
+  </body>
+</html>
