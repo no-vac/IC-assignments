@@ -1,0 +1,54 @@
+* {
+  outline: 1px solid red;
+}
+/* INDEX */
+.header {
+}
+.imgwrapper {
+  vertical-align: middle;
+  justify-content: center;
+  display: inline-block;
+}
+.header img {
+  height: auto;
+  width: 5em;
+  /* justify-content: center; */
+}
+.header .info {
+  vertical-align: middle;
+  display: inline-block;
+  width: 15em;
+  height: auto;
+}
+
+/* RESERVATION */
+.room-img img {
+  width: 200px;
+  height: auto;
+}
+.room-name {
+  font-size: 2em;
+  padding: 0.5em;
+}
+.head {
+  width: 100%;
+  text-align: center;
+}
+.room-wrapper {
+  margin: 1em;
+}
+.room-img {
+  display: inline-block;
+}
+.room-desc {
+  display: inline-block;
+}
+.room-desc p {
+}
+.room-price {
+  display: inline-block;
+}
+.radio {
+  display: inline-block;
+  vertical-align: middle;
+}
