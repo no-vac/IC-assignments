@@ -1,13 +1,37 @@
 * {
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
+  font-family: "Dancing Script", cursive;
+  font-size: 24px;
+  font-weight: 600;
 }
+
+body {
+  background: url(images/Winterbg.png) center no-repeat;
+  height: 90vh;
+}
+
 /* INDEX */
 .header {
 }
+.resform {
+  text-align: center;
+  background: rgba(183, 219, 255, 0.31);
+  margin: 0 5em 0 5em;
+  border-radius: 30px;
+}
+.dates,
+.nums {
+  padding: 1em 0 1em 0;
+}
+.nums div {
+  margin: 0.5em 0 0.5em 0;
+}
+
 .imgwrapper {
   vertical-align: middle;
   justify-content: center;
   display: inline-block;
+  padding-left: 5em;
 }
 .header img {
   height: auto;
@@ -42,8 +66,6 @@
 }
 .room-desc {
   display: inline-block;
-}
-.room-desc p {
 }
 .room-price {
   display: inline-block;
