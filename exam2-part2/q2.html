@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Q2</title>
+  </head>
+  <body>
+    <div class="dropdown">
+      <button class="dropdownbtn">Some Colleges at MSU</button>
+      <div class="dropdown-content">
+        <a href="#">College of Math and Sciences</a>
+        <a href="#">Business School</a>
+        <a href="#">College of Humanities and Social Sciences</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropdownbtn">Departments in CSAM</button>
+      <div class="dropdown-content">
+        <a href="#">Biology</a>
+        <a href="#">Computer Science</a>
+        <a href="#">Math</a>
+        <a href="#">Chemistry</a>
+        <a href="#">Earth and Evironment Studies</a>
+      </div>
+    </div>
+
+    <style>
+      * {
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .dropdownbtn {
+        background-color: green;
+        color: cyan;
+        font-size: 1em;
+        width: 170px;
+        border: 2px solid blue;
+      }
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: red;
+        border: 1px solid blue;
+        width: 168px;
+        z-index: 1;
+      }
+      .dropdown-content a {
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        border: 1px solid blue;
+        display: block;
+      }
+
+      .dropdown-content a:hover {
+        background-color: yellow;
+      }
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      .dropdown:hover .dropbtn {
+        background-color: yellow;
+      }
+    </style>
+  </body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Q1</title>
+  </head>
+  <body>
+    <h1>Graduate Open House Feedback Form</h1>
+    <p>
+      Please fill out this form to let us know how your visit was so that we can improve our program to better suit your
+      need.
+    </p>
+    <form action="">
+      <div class="info">
+        <label for="firstName">First Name:</label>
+        <input type="text" name="frstName" id="firstName" placeholder="Your first name" required /> (John)
+      </div>
+      <div class="info">
+        <label for="lastName">Last Name:</label>
+        <input type="text" name="frstName" id="lastName" placeholder="Your last name" required /> (Smith)
+      </div>
+      <div class="info">
+        <label for="address1">Address1:</label>
+        <input type="text" name="address1" id="address1" style="width:20em"/>
+      </div>
+      <div class="info">
+        <label for="address2">Address2:</label>
+        <input type="text" name="address2" id="address2" style="width:20em"/>
+      </div>
+      <div class="info">
+        <label for="zipcode">Zip Code:</label>
+        <input type="text" name="zipcode" id="zipcode" />
+      </div>
+      <div class="info">
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="fristInitLastname@montclair.edu" />
+        (name@montclair.edu)
+      </div>
+
+      <p style="font-weight: bold; font-style: italic">
+        Check off all of the characteristics that you enjoyed about our department:
+      </p>
+      <div class="chars">
+        <label for="faculty">Faculty</label>
+        <input type="checkbox" name="faculty" id="faculty" />
+      </div>
+      <div class="chars">
+        <label for="Students">Students</label>
+        <input type="checkbox" name="Students" id="Students" />
+      </div>
+      <div class="chars">
+        <label for="Location">Location</label>
+        <input type="checkbox" name="Location" id="Location" />
+      </div>
+      <div class="chars">
+        <label for="Facilities">Facilities</label>
+        <input type="checkbox" name="Facilities" id="Facilities" />
+      </div>
+      <br />
+      <div class="chars">
+        <label for="Atmosphere">Atmosphere</label>
+        <input type="checkbox" name="Atmosphere" id="Atmosphere" />
+      </div>
+      <div class="chars">
+        <label for="Research">Research</label>
+        <input type="checkbox" name="Research" id="Research" />
+      </div>
+      <div class="chars">
+        <label for="Curriculum">Curriculum</label>
+        <input type="checkbox" name="Curriculum" id="Curriculum" />
+      </div>
+
+      <p style="font-weight: bold; font-style: italic">How did you become interested in our graduate program?</p>
+
+      <div class="interest">
+        <label for="Friends">Friends</label>
+        <input type="radio" name="interest" id="Friends" />
+      </div>
+      <div class="interest">
+        <label for="Magazine">Magazine</label>
+        <input type="radio" name="interest" id="Magazine" />
+      </div>
+      <div class="interest">
+        <label for="Internet">Internet</label>
+        <input type="radio" name="interest" id="Internet" />
+      </div>
+      <div class="interest">
+        <label for="Friends">Friends</label>
+        <input type="radio" name="interest" id="Friends" />
+      </div>
+
+      <p style="font-weight: bold; font-style: italic">May we contact you?</p>
+
+      <div class="contact">
+        <label for="contact-yes">Yes</label>
+        <input type="radio" name="contact" id="yes" />
+      </div>
+      <div class="contact">
+        <label for="contact-no">No</label>
+        <input type="radio" name="contact" id="no" />
+      </div>
+
+      <p style="font-weight: bold; font-style: italic">Please leave comments here</p>
+      
+      <div>
+        <label for="comments">Comments:</label>
+        <textarea name="comments" id="comments" cols="45" rows="5"></textarea>
+      </div>
+      <div>
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Clear" />
+      </div>
+    </form>
+    <style>
+      body {
+        background-color: skyblue;
+      }
+      .chars,
+      .interest, .contact {
+        display: inline-block;
+      }
+      .info{
+          margin: 1em 0 1em 0
+      }
+      .chars{
+          margin: .5em 0 .5em 0
+      }
+    </style>
+  </body>
+</html>
