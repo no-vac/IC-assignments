@@ -1,30 +1,32 @@
+:root {
+  --main-text: ;
+  --main-bg: rgb(66, 99, 129);
+}
+.col-main-text {
+  color: var(--main-text);
+}
+.col-main-bg {
+  background-color: var(--main-bg);
+}
 * {
   /* outline: 1px solid red; */
   font-family: "Dancing Script", cursive;
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 600;
 }
-
+html,
+body {
+  height: 100%;
+}
 body {
   background: url(images/Winterbg.png) center no-repeat;
-  height: 90vh;
 }
-
-/* INDEX */
-.header {
-}
-.resform {
-  text-align: center;
-  background: rgba(183, 219, 255, 0.31);
-  margin: 0 5em 0 5em;
-  border-radius: 30px;
-}
-.dates,
-.nums {
-  padding: 1em 0 1em 0;
-}
-.nums div {
-  margin: 0.5em 0 0.5em 0;
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--light);
 }
 
 .imgwrapper {
@@ -43,6 +45,21 @@ body {
   display: inline-block;
   width: 15em;
   height: auto;
+}
+
+/* INDEX */
+.resform {
+  text-align: center;
+  background: rgba(183, 219, 255, 0.31);
+  margin: 0 5em 0 5em;
+  border-radius: 30px;
+}
+.dates,
+.nums {
+  padding: 1em 0 1em 0;
+}
+.nums div {
+  margin: 0.5em 0 0.5em 0;
 }
 
 /* RESERVATION */
