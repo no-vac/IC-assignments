@@ -11,7 +11,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Gudea&display=swap" rel="stylesheet" />
     <title>Cristian's Cabin</title>
   </head>
   <body>
@@ -28,53 +28,67 @@
     </div>
 
     <!-- CONTENT -->
-    <form class="resform" action="reservation.html">
-      <div class="dates">
-        <label for="date-from">Check-in:</label>
-        <input type="date" name="date-from" id="date-from" required />
-        <label for="date-to">Check-out:</label>
-        <input type="date" name="date-to" id="date-to" required />
+    <div class="container">
+      <div class="card col-main-bg">
+        <div class="card-body text-center">
+          <h3 class="card-title">Register</h3>
+          <form action="">
+            <div class="dates">
+              <div class="row justify-content-md-center">
+                <div class="col col-lg-2">
+                  <label for="date-from">Check-in:</label>
+                  <input type="date" name="date-from" id="date-from" required />
+                </div>
+                <div class="col col-md-auto"></div>
+                <div class="col col-lg-2">
+                  <label for="date-to">Check-out:</label>
+                  <input type="date" name="date-to" id="date-to" required />
+                </div>
+              </div>
+            </div>
+            <div class="nums">
+              <div>
+                <label for="num-rooms">Number of Rooms:</label>
+                <select name="num-rooms" id="num-rooms">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+              </div>
+              <div>
+                <label for="num-adults">Number of Adults:</label>
+                <select name="num-adults" id="num-adults">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+              </div>
+              <div>
+                <label for="num-children">Number of Children:</label>
+                <select name="num-children" id="num-children">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+              </div>
+            </div>
+            <input type="submit" class="btn btn-primary" value="Reserve" />
+          </form>
+        </div>
       </div>
-      <div class="nums">
-        <div>
-          <label for="num-rooms">Number of Rooms:</label>
-          <select name="num-rooms" id="num-rooms">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-          </select>
-        </div>
-        <div>
-          <label for="num-adults">Number of Adults:</label>
-          <select name="num-adults" id="num-adults">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-          </select>
-        </div>
-        <div>
-          <label for="num-children">Number of Children:</label>
-          <select name="num-children" id="num-children">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-          </select>
-        </div>
-      </div>
-      <input type="submit" value="Reserve" />
-    </form>
+    </div>
+    <!-- -->
 
     <!-- FOOTER -->
-    <footer class="page-footer">
-      <p>&copy; 1990 - 2019 Cristian's Cabin</p>
-      <p></p>
-    </footer>
+    <footer class="page-footer font-small">
+        <div class="footer-copyright text-center py-3">&copy; 1990 - 2019 Cristian's Cabin</div>
+      </footer>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

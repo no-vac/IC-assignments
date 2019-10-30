@@ -11,6 +11,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" />
+    <link href="https://fonts.googleapis.com/css?family=Gudea&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <title>Cristian's Cabin | Registration</title>
   </head>
@@ -29,36 +30,36 @@
 
     <!-- CONTENT -->
 
-    <div class="container">
+    <div id="register-containter" class="container">
       <div class="card col-main-bg">
         <div class="card-body">
           <h3 class="card-title text-center">Register</h3>
           <form action="">
             <div class="row">
-              <div class="col">
+              <div class="col col-md-6 col-12">
                 <div class="form-group">
                   <label for="firstName">First Name:</label>
-                  <input type="text" class="form-control" name="firstName" id="firstName" autofocus />
+                  <input required type="text" class="form-control" name="firstName" id="firstName" autofocus />
                 </div>
               </div>
-              <div class="col">
+              <div class="col col-md-6 col-12">
                 <div class="form-group">
                   <label for="lastName">Last Name:</label>
-                  <input type="text" class="form-control" name="lastName" id="lastName" />
+                  <input required type="text" class="form-control" name="lastName" id="lastName" />
                 </div>
               </div>
             </div>
             <div class="row">
-              <div class="col">
+              <div class="col col-md-6 col-12">
                 <div class="form-group">
                   <label for="email">Email:</label>
-                  <input type="email" class="form-control" name="email" id="email" />
+                  <input required type="email" class="form-control" name="email" id="email" />
                 </div>
               </div>
-              <div class="col">
+              <div class="col col-md-6 col-12">
                 <div class="form-group">
                   <label for="phonenum">Phone Number:</label>
-                  <input
+                  <input required
                     type="text"
                     name="phonenum"
                     id="phonenum"
@@ -73,32 +74,37 @@
               <div class="col">
                 <div class="form-group">
                   <label for="address1">Address 1:</label>
-                  <input type="text" class="form-control" name="address1" id="address1" />
+                  <input required type="text" class="form-control" name="address1" id="address1" />
                 </div>
                 <div class="form-group">
                   <label for="address2">Address 2:</label>
-                  <input type="text" class="form-control" name="address2" id="address2" />
+                  <input required type="text" class="form-control" name="address2" id="address2" />
                 </div>
               </div>
             </div>
             <div class="row">
-              <div class="col">
+              <div class="col col-md-4 col-12">
                 <div class="form-group">
                   <label for="City">City:</label>
-                  <input type="text" class="form-control" name="city" id="city" />
+                  <input required type="text" class="form-control" name="city" id="city" />
                 </div>
               </div>
-              <div class="col">
+              <div class="col col-md-4 col-12">
                 <div class="form-group">
                   <label for="state">State:</label>
-                  <input type="text" class="form-control" name="state" id="state" />
+                  <input required type="text" class="form-control" name="state" id="state" />
                 </div>
               </div>
-              <div class="col">
+              <div class="col col-md-4 col-12">
                 <div class="form-group">
                   <label for="zip">Zip Code:</label>
-                  <input type="text" class="form-control" name="zip" id="zip" />
+                  <input required type="number" class="form-control" name="zip" id="zip" />
                 </div>
+              </div>
+            </div>
+            <div class="row text-center">
+              <div class="col">
+                <button type="submit" class="btn btn-primary submit">Submit</button>
               </div>
             </div>
           </form>

@@ -1,6 +1,6 @@
 :root {
-  --main-text: ;
-  --main-bg: rgb(66, 99, 129);
+  --main-text: black;
+  --main-bg: rgb(193, 213, 233);
 }
 .col-main-text {
   color: var(--main-text);
@@ -10,7 +10,7 @@
 }
 * {
   /* outline: 1px solid red; */
-  font-family: "Dancing Script", cursive;
+  font-family: "Gudea", sans-serif;
   font-size: 16px;
   font-weight: 600;
 }
@@ -19,16 +19,14 @@ body {
   height: 100%;
 }
 body {
-  background: url(images/Winterbg.png) center no-repeat;
-}
-footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: var(--light);
+  background: url(images/Winterbg.png) center fixed;
 }
 
+.header {
+  background-color: var(--main-bg);
+  margin-bottom: 1em;
+  padding: 0.2em;
+}
 .imgwrapper {
   vertical-align: middle;
   justify-content: center;
@@ -46,11 +44,28 @@ footer {
   width: 15em;
   height: auto;
 }
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--main-bg);
+}
+
+.title {
+  background-color: var(--main-bg);
+  border-radius: 10px;
+  margin-bottom: 1em;
+}
+
+.jumbotron {
+  background-color: rgba(193, 213, 233, 0.753);
+}
 
 /* INDEX */
 .resform {
   text-align: center;
-  background: rgba(183, 219, 255, 0.31);
+  background: var(--main-bg);
   margin: 0 5em 0 5em;
   border-radius: 30px;
 }
@@ -63,7 +78,13 @@ footer {
 }
 
 /* RESERVATION */
-.room-img img {
+.reservation {
+  margin-bottom: 8em;
+}
+.reservation .card {
+  margin-bottom: 1em;
+}
+.reservation img {
   width: 200px;
   height: auto;
 }
@@ -90,4 +111,37 @@ footer {
 .radio {
   display: inline-block;
   vertical-align: middle;
+}
+.submit {
+  width: 10em;
+}
+#register-container {
+  margin-bottom: 7em;
+}
+
+/* Attractions */
+
+#attractions .row {
+  margin-bottom: 1em;
+}
+#attractions {
+  margin-bottom: 5em;
+}
+
+/* Dining */
+#dining img {
+  transition: 100ms linear;
+}
+
+#dining img:hover {
+  z-index: 2;
+  transform: scale(1.2);
+}
+
+/* MODIFICATIONS */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
